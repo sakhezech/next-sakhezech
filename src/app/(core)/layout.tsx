@@ -5,7 +5,7 @@ import { StyledLink } from "./core_components/styled";
 export default function CoreLayout({ children }: { children: ReactNode }) {
   return (
     <>
-      <body className="text-core-secondary dark:text-core-primary selection:text-core-primary selection:bg-core-secondary flex h-screen flex-col font-mono">
+      <body className="text-core-secondary custom-color-background dark:text-core-primary selection:text-core-primary selection:bg-core-secondary flex h-screen flex-col font-mono">
         <Header />
         <main className="flex grow flex-col">
           {children}
@@ -19,7 +19,7 @@ export default function CoreLayout({ children }: { children: ReactNode }) {
 function Header() {
   return (
     <>
-      <nav className="bg-core-primary dark:bg-core-secondary mb-16 flex items-center gap-5 p-5 shadow-md">
+      <nav className="bg-core-primary dark:bg-core-secondary mb-16 flex items-center gap-5 p-5 shadow-md flex-wrap">
         <StyledLink href="/"> Home </StyledLink>
         <StyledLink href="/projects"> Projects </StyledLink>
         <StyledLink href="/resume"> Résumé </StyledLink>
@@ -33,7 +33,7 @@ function Header() {
 function Footer() {
   return (
     <>
-      <footer className="bg-core-primary dark:bg-core-secondary mt-16 flex items-center gap-5 p-5">
+      <footer className="bg-core-primary dark:bg-core-secondary mt-16 box-border flex items-center gap-5 border p-5 flex-wrap">
         You can find me here!
         <StyledLink href="https://t.me/sakhezech"> <FaTelegramPlane /> Telegram </StyledLink>
         <StyledLink href="https://discordapp.com/users/311643179009048578"> <FaDiscord /> Discord </StyledLink>

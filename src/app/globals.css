@@ -2,3 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+@keyframes background-movement { 0% { background-position-x: 0%;}; 100% { background-position-x: 100%;} }
+
+.custom-color-background {
+	background: linear-gradient(45deg,
+	rgb(238, 119, 82),
+	rgb(231, 60, 126),
+	rgb(35, 166, 213),
+	rgb(35, 213, 171)
+	) 50% / 300% 300%;
+	animation: background-movement 7.5s ease-in-out infinite alternate;
+}

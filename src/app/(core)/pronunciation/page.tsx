@@ -14,7 +14,7 @@ export default function PronunciationPage() {
           </span>
           <br />
           <span className="md:text-xl">
-            Video <Link href=""> here. </Link>
+            Video <Link href="" className="underline"> here. </Link>
           </span>
         </div>
       </div>

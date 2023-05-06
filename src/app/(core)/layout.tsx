@@ -9,7 +9,7 @@ export default function CoreLayout({ children }: { children: ReactNode }) {
     <>
       <body className="text-core-secondary custom-color-background dark:text-core-primary selection:text-core-primary selection:bg-core-secondary flex h-screen flex-col font-mono">
         <Header />
-        <main className="flex grow flex-col">
+        <main className="mx-16 flex grow flex-col">
           {children}
         </main>
         <Footer />
